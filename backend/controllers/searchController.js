@@ -119,3 +119,4 @@ export const indexProduct = async (product) => {
     console.error("❌ Error indexing product:", err);
   }
 };
+// Elasticsearch integration completed
