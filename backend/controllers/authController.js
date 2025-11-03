@@ -115,3 +115,4 @@ export const checkAuth = (req, res) => {
     return res.status(403).json({ authenticated: false, message: "Invalid or expired token" });
   }
 };
+// Authentication logic implemented
