@@ -131,3 +131,4 @@ export const getProductsByCategory = async (req, res) => {
     res.status(500).json({ message: "Error fetching products" });
   }
 };
+// Product and category API logic implemented
