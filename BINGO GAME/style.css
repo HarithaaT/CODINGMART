@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+h1 {
+  margin: 25px 0;
+  font-size: 32px;
+}
+
+/* Setup Section */
+.setup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Label text */
+.setup label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Input box */
+#playersInput {
+  font-size: 18px;
+  padding: 8px 12px;
+  width: 70px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Create Boards Button */
+#createBoards {
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+}
+
+#createBoards:hover {
+  background: #3b5be0;
+}
+
+/* Boards Container */
+#boardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Player Card */
+.player {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Player Title */
+.player h3 {
+  margin: 5px 0 10px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 48px);
+  gap: 6px;
+}
+
+/* Cell */
+.cell {
+  width: 48px;
+  height: 48px;
+  background: #e0e0e0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+  user-select: none;
+}
+
+/* Filled cell (player color) */
+.cell.filled {
+  color: white;
+}
+
+/* Marked after number generated */
+.cell.marked {
+  background: #999 !important;
+  color: white;
+}
+
+/* Bingo Letters */
+.bingo {
+  margin-top: 12px;
+  letter-spacing: 8px;
+}
+
+.bingo span {
+  color: #bbb;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.bingo span.active {
+  color: black;
+}
+
+/* Generate Button */
+#generateBtn {
+  margin-top: 25px;
+  padding: 14px 35px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+}
+
+#generateBtn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Current Number Circle */
+#currentNumber {
+  margin: 30px auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: white;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Winner Message */
+#winnerMessage {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
