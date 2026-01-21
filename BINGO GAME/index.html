@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bingo Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎯 BINGO GAME</h1>
+
+  <div class="setup">
+    <label>
+      Number of Players (2-5):
+      <input type="number" id="playersInput" min="2" max="5" value="2">
+    </label>
+    <button id="createBoards">Create Boards</button>
+  </div>
+
+  <div id="winnerMessage"></div>
+
+  <div id="boardsContainer"></div>
+
+  <button id="generateBtn" disabled>Generate Bingo Number</button>
+
+  <div id="currentNumber">--</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
